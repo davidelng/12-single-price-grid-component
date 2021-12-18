@@ -28,17 +28,23 @@ body {
     min-height: 100vh;
     font-family: 'Karla', sans-serif;
     background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    margin: 2rem;
+    margin: auto;
+}
+
+article {
+    margin: 4rem 2rem;
     border-radius: .5rem;
     overflow: hidden;
-    /* max-width: 40rem; */
+    max-width: 40rem;
 }
 
 section {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .join {
@@ -46,20 +52,46 @@ section {
 }
 
 .join h2 {
-    color: var(--cyan)
+    color: var(--cyan);
+    font-size: 1.2rem;
 }
 
 .join p:nth-of-type(1) {
     color: var(--bright-yellow);
+    font-weight: 700;
+    margin: 1.2rem 0;
 }
 
 .join p:nth-of-type(2) {
     color: var(--grayish-blue);
+    font-size: .85rem;
+    line-height: 1.5rem;
 }
 
 .signup {
     background-color: var(--cyan);
     color: white;
+}
+
+.signup h2 {
+    font-size: 1.2rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.price p:nth-of-type(1) {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.price p:nth-of-type(2) {
+    color: var(--light-gray);
+    margin: 1rem .5rem;
 }
 
 .signup button {
@@ -70,6 +102,7 @@ section {
     color: white;
     background-color: var(--bright-yellow);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
 }
 
 .why {
@@ -77,15 +110,27 @@ section {
     color: white;
 }
 
+.why h2 {
+    font-size: 1.2rem;
+}
+
 ul {
     padding: 0;
     list-style: none;
+    font-size: .85rem;
+    line-height: 1.4rem;
+    margin-bottom: 0;
 }
 
 /* .attribution */
+footer {
+    margin: 1rem;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--grayish-blue);
   }
 
   .attribution a {
@@ -94,10 +139,17 @@ ul {
 
 /* DESKTOP */
 @media (min-width: 56.2rem) {
-    main {
+
+    article {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        margin: auto;
+        /* max-height: 40rem; */
+    }
+
+    section {
+        padding: 2.5rem;
     }
 
     .join {
@@ -105,13 +157,41 @@ ul {
         grid-row: 1/2;
     }
 
+    .join h2 {
+        font-size: 1.5rem;
+    }
+    
+    .join p:nth-of-type(1) {
+        font-size: 1.1rem;
+    }
+    
+    .join p:nth-of-type(2) {
+        font-size: 1rem;
+    }
+
     .signup {
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
+    .signup button {
+        margin-top: 2.5rem;
+    }
+
+    .price {
+        margin-bottom: .3rem;
+    }
+
     .why {
         grid-column: 2/3;
         grid-row: 2/3;
+    }
+
+    footer {
+        margin: 0;
+        position: absolute;
+        top: 95%;
+        width: 100%;
+        text-align: center;
     }
 }
