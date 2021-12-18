@@ -10,9 +10,6 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -31,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-[Solution URL]()
-[Live site URL]()
+[Solution URL](https://github.com/davidelng/12-single-price-grid-component)  
+[Live site URL](https://davidelng.github.io/12-single-price-grid-component/)
 
 ## My process
 
@@ -43,14 +40,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-
-
-### Continued development
-
-
 
 ## Author
 
